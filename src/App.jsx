@@ -29,7 +29,8 @@ const App = () => {
             <div>"No data present"</div>
           )}
         </div>
-        <PlayButton />
+        <PlayButton message="video played" buttonName={"Play"} />
+        <PlayButton message={"video paused"} buttonName={"Pause"} />
       </div>
     </>
   );
