@@ -1,14 +1,12 @@
 import "./Video.css";
-const Video = ({ image, title, channel, views, time, verified }) => {
+const Video = ({ title, channel, views, time, verified, id }) => {
   return (
     <div className="videoWrapper">
-      <img src={image} alt="" />
+      <img src={`https://picsum.photos/id/${id}/220/150`} alt="not fetched" />
       <div className="title">{title}</div>
-      {verified ? (
-        <div className="channel">{channel} ✅</div>
-      ) : (
-        <div className="channel">{channel}</div>
-      )}
+      <div className="channel">
+        {channel} {verified ? "✅" : null}
+      </div>
       <div className="views">
         {views}k views <span>.</span> {time}
       </div>
