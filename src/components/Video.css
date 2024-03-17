@@ -1,0 +1,9 @@
+.videoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.videoname {
+  font-size: 0.8rem;
+}
