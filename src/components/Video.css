@@ -4,6 +4,6 @@
   gap: 0.3rem;
 }
 
-.videoname {
-  font-size: 0.8rem;
+.title, .channel, .views {
+  font-size: 12px;
 }
